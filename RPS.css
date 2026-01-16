@@ -13,6 +13,11 @@ h1{
     width: 120px;
 
 }
+.img1:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
 .img1:hover:active{
     opacity: 0.5;
     cursor: pointer;    
@@ -37,7 +42,12 @@ img{
     gap: 2rem;
     font-size: 2rem;
     margin-top: 2rem;
-
+}
+.score-board h5{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: rgb(48, 65, 81);
+    margin-left: -9rem;
 }
 #user-score,#comp-score{
      font-size: 3.5rem;
@@ -61,17 +71,30 @@ img{
     color: rgb(255, 147, 147);
     cursor: pointer;
 }
+@media (max-width:600px){
+    .choice{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    @media (max-width: 300px){
+        .msg-container p{
+            font-size: 1.5rem;
+            color: black;
+            background-color: white;
+            
+        }
+}}
 footer{
     display: block;
     position: fixed;
     bottom: 0px;
     right: 50%;
-    background-color: rgb(42, 38, 38);
+    /* background-color: rgb(42, 38, 38); */
     
 }
 #foot{
     text-align: center;
-    color: azure;
+    color: rgb(32, 32, 32);
 }
 
 
